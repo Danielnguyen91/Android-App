@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+      <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+    <EditText
+        android:id="@+id/contactNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/componen_bottom_margin"
+        android:ems="10"
+        android:hint="@string/contact_name_hint"
+        android:inputType="textCapWords|textPersonName"
+        android:layout_weight="1" >
+
+        <requestFocus />
+    </EditText>
+       <EditText
+            android:id="@+id/contactPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contact_phone_number_hint"
+            android:inputType="phone"
+             android:layout_weight="1"  >
+
+    </EditText>
+  
+     </TableRow>
+     
+       <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+       
+              <EditText
+         android:id="@+id/contactStreetEditText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/componen_bottom_margin"
+         android:ems="10"
+         android:hint="@string/contact_street_hint"
+         android:inputType="textCapWords|textPostalAddress"
+          android:layout_weight="1"  >
+       
+    </EditText>
+      <EditText
+          android:id="@+id/contactCityEditText"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="@dimen/componen_bottom_margin"
+          android:ems="10"
+          android:hint="@string/contact_city_hint"
+          android:inputType="textCapWords" 
+           android:layout_weight="1" >
+
+    </EditText>
+    
+     
+  </TableRow>
+      
+       
+
+</TableLayout>
